@@ -1,0 +1,402 @@
+[
+  {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"GS",
+          "year":2015,
+          "version":"GS350 3.5 V6 VVT-i",
+          "enginecode":"2GR-FKS",
+          "fuel":"Petrol",
+          "kw":232,
+          "ecubrand":"Denso",
+          "ecuversion":"89661-04xxx (CAN)",
+          "price":129.99,
+          "category": 1,
+          "image": "p_denso_1.jpg",
+          "sku":1
+      }
+  },
+  {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"GS",
+          "year":2008,
+          "version":"GS300 3.0 V6 VVT-i",
+          "enginecode":"3GR-FE",
+          "fuel":"Petrol",
+          "kw":170,
+          "ecubrand":"Denso",
+          "ecuversion":"275036-8730 (CAN)",
+          "price":129.99,
+          "category": 1,
+          "image": "p_denso_2.jpg",
+          "sku":13
+      }
+  },
+  {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"IS",
+          "year":2005,
+          "version":"IS220d 2.2 16v D-CAT",
+          "enginecode":"2AD-FHV",
+          "fuel":"Diesel",
+          "kw":130,
+          "ecubrand":"Denso",
+          "ecuversion":"175822-773 (CAN)",
+          "price":139.99,
+          "category": 2,
+          "image": "d_denso_1.jpg",
+          "sku":32
+      }
+  },
+  {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"IS",
+          "year":2007,
+          "version":"IS220d 2.2 16v D-CAT",
+          "enginecode":"2AD-FHV",
+          "fuel":"Diesel",
+          "kw":130,
+          "ecubrand":"Denso",
+          "ecuversion":"175822-773 (CAN)",
+          "price":139.99,
+          "category": 2,
+          "image": "d_denso_1.jpg",
+          "sku":34
+      }
+  },
+  {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"IS",
+          "year":2009,
+          "version":"IS250 2.5 V6 VVT-i",
+          "enginecode":"4GR-FSE",
+          "fuel":"Petrol",
+          "kw":153,
+          "ecubrand":"Denso",
+          "ecuversion":"275036-8730 (CAN)",
+          "price":149.99,
+          "category": 1,
+          "image": "p_denso_1.jpg",
+          "sku":44
+      }
+  },
+  {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"IS",
+          "year":2007,
+          "version":"IS-F 5.0 V8",
+          "enginecode":"2UR-GSE",
+          "fuel":"Petrol",
+          "kw":311,
+          "ecubrand":"Denso",
+          "ecuversion":"275036-3410",
+          "price":149.99,
+          "category": 1,
+          "image": "p_denso_2.jpg",
+          "sku":60
+      }
+  },
+  {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Lexus",
+          "model":"LS",
+          "year":2017,
+          "version":"LS350 3.5 V6 VVT-i",
+          "enginecode":"2GR-FKS",
+          "fuel":"Petrol",
+          "kw":237,
+          "ecubrand":"Denso",
+          "ecuversion":"89661-04xxx (CAN)",
+          "price":175,
+          "category": 1,
+          "image": "p_denso_1.jpg",
+          "sku":81
+      }
+  },
+  {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2018,
+          "version":"1.5 Blue dCi 6MT",
+          "enginecode":"K9K",
+          "fuel":"Diesel",
+          "kw":85,
+          "ecubrand":"Bosch",
+          "ecuversion":"MD1CS006",
+          "price":175,
+          "category": 4,
+          "image": "d_bosch_1.jpg",
+          "sku":83
+      }
+  },
+  {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2015,
+          "version":"1.5 dCi 6MT",
+          "enginecode":"K9K-658",
+          "fuel":"Diesel",
+          "kw":81,
+          "ecubrand":"Continental",
+          "ecuversion":"SID310",
+          "price":180.99,
+          "category": 6,
+          "image": "d_cont_1.jpg",
+          "sku":89
+      }
+  },
+  {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2015,
+          "version":"1.5 dCi 6MT",
+          "enginecode":"K9K-628",
+          "fuel":"Diesel",
+          "kw":66,
+          "ecubrand":"Bosch",
+          "ecuversion":"EDC17C84",
+          "price":180.99,
+          
+          "category": 4,
+          "image": "d_bosch_2.jpg",
+          "sku":90
+      }
+  },
+  {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2016,
+          "version":"1.5 dCi 6MT",
+          "enginecode":"K9K-658",
+          "fuel":"Diesel",
+          "kw":81,
+          "ecubrand":"Continental",
+          "ecuversion":"SID310",
+          "price":180.99,
+          "category": 6,
+          "image": "d_cont_1.jpg",
+          "sku":92
+      }
+  },
+  {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2015,
+          "version":"1.2 TCe 6AT",
+          "enginecode":"H5F-404",
+          "fuel":"Petrol",
+          "kw":92,
+          "ecubrand":"Continental",
+          "ecuversion":"EMS3150",
+          "price":180.99,
+          "category": 7,
+          "image": "p_cont_1.jpg",
+          "sku":102
+      }
+  },
+  {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Duster",
+          "year":2015,
+          "version":"1.6 16v 5MT",
+          "enginecode":"K4M-690",
+          "fuel":"Petrol",
+          "kw":77,
+          "ecubrand":"Continental",
+          "ecuversion":"EMS3130",
+          "price":190,
+          "category": 7,
+          "image": "p_cont_1.jpg",
+          "sku":108
+      }
+  },
+  {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Logan",
+          "year":2015,
+          "version":"1.5 dCi 5MT",
+          "enginecode":"K9K-626",
+          "fuel":"Diesel",
+          "kw":66,
+          "ecubrand":"Bosch",
+          "ecuversion":"EDC17C84",
+          "price":190,
+          "category": 4,
+          "image": "d_bosch_1.jpg",
+          "sku":110
+      }
+  },
+  {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Logan",
+          "year":2019,
+          "version":"1.5 dCi 5MT",
+          "enginecode":"K9K",
+          "fuel":"Diesel",
+          "kw":70,
+          "ecubrand":"Bosch",
+          "ecuversion":"MD1CS006",
+          "price":200,
+          "category": 4,
+          "image": "d_bosch_2.jpg",
+          "sku":124
+      }
+  },
+  {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Logan",
+          "year":2015,
+          "version":"0.9 TCe 5AT",
+          "enginecode":"H4B-400",
+          "fuel":"Petrol",
+          "kw":71,
+          "ecubrand":"Valeo",
+          "ecuversion":"V50",
+          "price":200,
+          "category": 8,
+          "image": "p_valeo_1.jpg",
+          "sku":133
+      }
+  },
+  {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Logan",
+          "year":2015,
+          "version":"1.2 16v 5MT",
+          "enginecode":"D4F-734",
+          "fuel":"Petrol",
+          "kw":55,
+          "ecubrand":"Valeo",
+          "ecuversion":"V42",
+          "price":200,
+          "category": 8,
+          "image": "p_valeo_2.jpg",
+          "sku":140
+      }
+  },
+  {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Sandero",
+          "year":2017,
+          "version":"1.5 dCi 5MT",
+          "enginecode":"K9K-626",
+          "fuel":"Diesel",
+          "kw":66,
+          "ecubrand":"Bosch",
+          "ecuversion":"EDC17C84",
+          "price":209.99,
+          "category": 4,
+          "image": "d_bosch_1.jpg",
+          "sku":149
+      }
+  },
+  {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Sandero",
+          "year":2018,
+          "version":"1.5 dCi 5MT",
+          "enginecode":"K9K",
+          "fuel":"Diesel",
+          "kw":70,
+          "ecubrand":"Bosch",
+          "ecuversion":"MD1CS006",
+          "price":209.99,
+          "category": 4,
+          "image": "d_bosch_2.jpg",
+          "sku":153
+      }
+  },
+  {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Sandero",
+          "year":2015,
+          "version":"0.9 TCe 5AT",
+          "enginecode":"H4B-400",
+          "fuel":"Petrol",
+          "kw":71,
+          "ecubrand":"Valeo",
+          "ecuversion":"V50",
+          "price":209.99,
+          "category": 8,
+          "image": "p_valeo_2.jpg",
+          "sku":165
+      }
+  },
+  {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+          "manufacturer":"Dacia",
+          "model":"Sandero",
+          "year":2015,
+          "version":"1.2 16v 5MT",
+          "enginecode":"D4F-734",
+          "fuel":"Petrol",
+          "kw":55,
+          "ecubrand":"Valeo",
+          "ecuversion":"V42",
+          "price":209.99,
+          "category": 8,
+          "image": "p_valeo_1.jpg",
+          "sku":172
+      }
+  }
+]
