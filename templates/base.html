@@ -38,6 +38,7 @@
 
     <header class="container-fluid fixed-top">
       <div class="row bg-white pt-lg-2 d-none d-lg-flex" id="topnav">
+        <!-- Company logo -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
             <h2 class="logo-font text-black my-0">
@@ -45,8 +46,9 @@
             </h2>
           </a>
         </div>
+        <!-- Search bar -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-          <form method="GET" action="">
+          <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
               <input type="text" class="form-control border border-black rounded-0" name="q"
                 placeholder="Search our site">
@@ -60,6 +62,7 @@
             </div>
           </form>
         </div>
+        <!-- Account and shopping cart management -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
@@ -100,6 +103,7 @@
           </ul>
         </div>
       </div>
+      <!-- Navbar base --> 
       <div class="row bg-white">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -110,11 +114,12 @@
           {% include 'includes/main-nav.html' %}
         </nav>
       </div>
+      <!-- Special offers banner -->
       <div id="delivery-banner" class="row text-center">
         <div class="col bg-black text-white">
             <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
         </div>            
-    </div>
+      </div>
     </header>
 
     {% if messages %}
