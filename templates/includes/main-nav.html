@@ -19,11 +19,11 @@
                 Petrol
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="petrol-link">
-                <a href="" class="dropdown-item">Bosch</a>
-                <a href="" class="dropdown-item">Continental</a>
-                <a href="" class="dropdown-item">Denso</a>
-                <a href="" class="dropdown-item">Valeo</a>
-                <a href="" class="dropdown-item">All Petrol ECU's</a>
+                <a href="{% url 'products' %}?category=petrol_bosch" class="dropdown-item">Bosch</a>
+                <a href="{% url 'products' %}?category=petrol_continental" class="dropdown-item">Continental</a>
+                <a href="{% url 'products' %}?category=petrol_denso" class="dropdown-item">Denso</a>
+                <a href="{% url 'products' %}?category=petrol_valeo" class="dropdown-item">Valeo</a>
+                <a href="{% url 'products' %}?category=petrol_bosch,petrol_continental,petrol_denso,petrol_valeo" class="dropdown-item">All Petrol ECU's</a>
             </div>
         </li>
 
@@ -33,11 +33,11 @@
                 Diesel
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="diesel-link">
-                <a href="" class="dropdown-item">Bosch</a>
-                <a href="" class="dropdown-item">Continental</a>
-                <a href="" class="dropdown-item">Denso</a>
-                <a href="" class="dropdown-item">Valeo</a>
-                <a href="" class="dropdown-item">All Diesel ECU's</a>
+                <a href="{% url 'products' %}?category=diesel_bosch" class="dropdown-item">Bosch</a>
+                <a href="{% url 'products' %}?category=diesel_continental" class="dropdown-item">Continental</a>
+                <a href="{% url 'products' %}?category=diesel_denso" class="dropdown-item">Denso</a>
+                <a href="{% url 'products' %}?category=diesel_valeo" class="dropdown-item">Valeo</a>
+                <a href="{% url 'products' %}?category=diesel_bosch,diesel_continental,diesel_denso,diesel_valeo" class="dropdown-item">All Diesel ECU's</a>
             </div>
         </li>
 
@@ -49,7 +49,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="" class="dropdown-item">New Arrivals</a>
                 <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>
