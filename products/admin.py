@@ -10,15 +10,22 @@ class ProductAdmin(admin.ModelAdmin):
         'version',
         'enginecode',
         'fuel',
-        'kw',
         'ecubrand',
         'ecuversion',
         'price',
+        'category',
         'sku',
     )
 
     ordering = ('sku',)
 
 
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
