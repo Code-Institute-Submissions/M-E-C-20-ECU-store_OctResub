@@ -17,7 +17,8 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     manufacturer = models.CharField(max_length=254)
     model = models.CharField(max_length=254)
     year = models.CharField(max_length=254)
