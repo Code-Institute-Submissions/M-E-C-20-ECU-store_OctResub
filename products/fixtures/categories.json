@@ -4,7 +4,7 @@
         "model":"products.category",
         "fields":{
             "name":"petrol_denso",
-            "friendly_name":"Denso"
+            "friendly_name":"Denso: petrol"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model":"products.category",
         "fields":{
             "name":"diesel_denso",
-            "friendly_name":"Denso"
+            "friendly_name":"Denso: diesel"
         }
     },
     {
@@ -28,7 +28,7 @@
         "model":"products.category",
         "fields":{
             "name":"diesel_bosch",
-            "friendly_name":"Bosch"
+            "friendly_name":"Bosch: diesel"
         }
     },
     {
@@ -36,7 +36,7 @@
         "model":"products.category",
         "fields":{
             "name":"petrol_bosch",
-            "friendly_name":"Bosch"
+            "friendly_name":"Bosch: petrol"
         }
     },
     {
@@ -44,7 +44,7 @@
         "model":"products.category",
         "fields":{
             "name":"diesel_continental",
-            "friendly_name":"Continental"
+            "friendly_name":"Continental: diesel"
         }
     },
     {
@@ -52,7 +52,7 @@
         "model":"products.category",
         "fields":{
             "name":"petrol_continental",
-            "friendly_name":"Continental"
+            "friendly_name":"Continental: petrol"
         }
     },
     {
@@ -60,7 +60,7 @@
         "model":"products.category",
         "fields":{
             "name":"petrol_valeo",
-            "friendly_name":"Valeo"
+            "friendly_name":"Valeo: petrol"
         }
     }
 ]
