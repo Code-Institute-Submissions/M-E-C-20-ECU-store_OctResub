@@ -1,0 +1,1 @@
+web: gunicorn ecu_store.wsgi:application
