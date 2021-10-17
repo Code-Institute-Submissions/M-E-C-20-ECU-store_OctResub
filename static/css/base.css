@@ -190,6 +190,13 @@ input[name='q']::placeholder {
     color: #6c757d; /* text-secondary */
 }
 
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
 .allauth-form-inner-content input {
     border-color: #000;
     border-radius: 0;
