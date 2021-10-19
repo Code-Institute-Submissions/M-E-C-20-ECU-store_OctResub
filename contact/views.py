@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from .models import Contact
 
@@ -8,10 +8,11 @@ from .forms import ContactForm
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
+        posts = Contact.objects.all()
         if form.is_valid():
             form.save()
             messages.success(request, 'Thank you for your enquiry. A member of our team will be in touch soon!')
-            return render(request, 'contact/contact_success.html')
+            return redirect(reverse('contact'))
         else:
             messages.error(request, 'Failed to send message. Please ensure the form is valid.')
     form = ContactForm()
