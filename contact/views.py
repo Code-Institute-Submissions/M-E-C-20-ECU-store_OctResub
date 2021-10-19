@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from .models import Contact
 
 from .forms import ContactForm
 
@@ -17,3 +18,15 @@ def contact_view(request):
     context = {'form': form}
     template = 'contact/contact.html'
     return render(request, template, context)
+
+
+def contact_admin(request):
+    """ A view to show all contact requests, including sorting queries """
+
+    contacts = Contact.objects.all()
+
+    context = {
+        'contacts': contacts,
+    }
+
+    return render(request, 'contact/contact_admin.html', context)
