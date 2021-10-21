@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .models import Contact
+from django.contrib.auth.decorators import login_required
 
+from .models import Contact
 from .forms import ContactForm
 
 
@@ -21,26 +22,34 @@ def contact_view(request):
     return render(request, template, context)
 
 
+@login_required
 def contact_admin(request):
     """ A view to show all contact requests, including sorting queries """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    else:
+        contacts = Contact.objects.all().order_by('-created')
 
-    contacts = Contact.objects.all().order_by('-created')
+        context = {
+            'contacts': contacts,
+        }
 
-    context = {
-        'contacts': contacts,
-    }
-
-    return render(request, 'contact/contact_admin.html', context)
+        return render(request, 'contact/contact_admin.html', context)
 
 
+@login_required
 def contact_message(request, contact_id):
     """ A view to show an individual contact message """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    else:
+        contact = get_object_or_404(Contact, pk=contact_id)
 
-    contact = get_object_or_404(Contact, pk=contact_id)
+        context = {
+            'contact': contact,
+        }
+        template = 'contact/contact_message.html'
 
-    context = {
-        'contact': contact,
-    }
-    template = 'contact/contact_message.html'
-
-    return render(request, template, context)
+        return render(request, template, context)
