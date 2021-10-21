@@ -58,5 +58,22 @@
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>
+
+        <li class="nav-item">
+            <a href="{% url 'contact' %}" class="logo-font font-weight-bold nav-link text-black mr-5">Contact</a>
+          </li>
+
+        {% if request.user.is_superuser %}
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="admin-tools"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin Tools
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="admin-tools">
+                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    <a href="{% url 'contact_admin' %}" class="dropdown-item">Contact Admin</a>
+                </div>
+            </li>
+        {% endif %}
     </ul>
 </div>
