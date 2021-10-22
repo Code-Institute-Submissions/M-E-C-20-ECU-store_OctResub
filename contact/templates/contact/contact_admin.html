@@ -27,9 +27,10 @@
                             <div class="card text-center h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ contact.email }}</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">{{ contact.subject }}</h6>
-                                    <a href="{% url 'contact_message' contact.id %}" class="card-link">Edit</a>
-                                    <a href="#" class="card-link">Delete</a>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{ contact.get_subject_display }}</h6>
+                                    <small class="ml-3">
+                                        <a href="{% url 'contact_message' contact.id %}" class="card-link">View Message</a>
+                                    </small>
                                     <div class="card-footer text-muted">
                                         {{ contact.created }}
                                     </div>
