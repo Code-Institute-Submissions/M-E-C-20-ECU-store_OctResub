@@ -23,13 +23,19 @@ body {
     text-transform: uppercase;
 }
 
+li .logo-font:hover,
+li .logo-font:active,
+li .logo-font:focus {
+    text-decoration: underline;
+}
+
 .main-logo-link {
     width: fit-content;
 }
 
 .shop-now {
-    background: black;
-    color: white;
+    background: #3e3b3b;
+    color: #f8f9fa;
     min-width: 260px;
 }
 
