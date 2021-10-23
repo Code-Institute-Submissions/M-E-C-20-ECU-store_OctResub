@@ -76,10 +76,12 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-def fixed_it(request, pk):
+@login_required
+def fixed_it(request, product_id):
+    """ Allow logged in user to add to fixed it count """
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
     product.fixed_it.add(request.user)
-    return HttpResponseRedirect(reverse('product_detail', args=[str(pk)]))
+    return HttpResponseRedirect(reverse('product_detail', args=[str(product_id)]))
 
 
 @login_required

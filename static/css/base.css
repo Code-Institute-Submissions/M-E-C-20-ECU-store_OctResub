@@ -6,7 +6,7 @@ body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #3e3b3b;
     font-family: 'Lato';
 }
 
@@ -27,7 +27,7 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
+.shop-now {
     background: black;
     color: white;
     min-width: 260px;
@@ -51,9 +51,9 @@ body {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.shop-now:hover,
+.shop-now:active,
+.shop-now:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -62,7 +62,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #3e3b3b !important;
 }
 
 .border-black {
@@ -79,7 +79,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: rgba(240, 235, 235, 0.8);
 	z-index: -1;
 }
 

@@ -42,11 +42,11 @@
   <body>
 
     <header class="container-fluid fixed-top">
-      <div class="row bg-white pt-lg-2 d-none d-lg-flex" id="topnav">
+      <div class="row bg-light pt-lg-2 d-none d-lg-flex" id="topnav">
         <!-- Company logo -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h2 class="logo-font text-black my-0">
+            <h2 class="logo-font text-dark my-0">
               <strong>ECU</strong> Store
             </h2>
           </a>
@@ -71,7 +71,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+              <a class="text-dark nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="text-center">
                   <div><i class="fas fa-user fa-lg"></i></div>
@@ -89,7 +89,7 @@
               </div>
             </li>
             <li class="list-inline-item">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-dark{% endif %} nav-link"
                 href="{% url 'view_bag' %}">
                 <div class="text-center">
                   <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -107,7 +107,7 @@
         </div>
       </div>
       <!-- Navbar base --> 
-      <div class="row bg-white">
+      <div class="row bg-light">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,7 +119,7 @@
       </div>
       <!-- Special offers banner -->
       <div id="delivery-banner" class="row text-center">
-        <div class="col bg-black text-white">
+        <div class="col bg-dark text-light">
             <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
         </div>            
       </div>
