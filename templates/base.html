@@ -149,86 +149,31 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="page-footer font-small purple pt-4 bg-dark text-light">
-
-      <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
-
-        <!-- Grid row -->
-        <div class="row">
-
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-
-            <!-- Content -->
-            <h5 class="text-uppercase">Footer Content</h5>
-            <p>Here you can use rows and columns to organize your footer content.</p>
-
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3">
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="sr-only">Opens in new window</span>
-                  <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="sr-only">Opens in new window</span>
-                  <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">Youtube</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                  <span class="sr-only">Opens in new window</span>
-                  <i class="fab fa-instagram-square" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram</span>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 border-top bg-dark text-light fixed-bottom">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2021 Company, Inc</span>
       </div>
-      <!-- Footer Links -->
-
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
-
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/" target="_blank"
+            rel="noreferrer noopener"><span class="sr-only">Opens in new window</span>
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+            <span class="sr-only">Youtube</span></a>
+        </li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/" target="_blank"
+          rel="noreferrer noopener"><span class="sr-only">Opens in new window</span>
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">Youtube</span></a>
+        </li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/" target="_blank"
+          rel="noreferrer noopener"><span class="sr-only">Opens in new window</span>
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">Youtube</span></a>
+        </li>
+      </ul>
     </footer>
 
     {% block postloadjs %}
