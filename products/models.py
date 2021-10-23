@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -31,6 +32,10 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True)
+    fixed_it = models.ManyToManyField(User, related_name='fixed_its')
 
     def __str__(self):
         return self.manufacturer
+
+    def total_fixes(self):
+        return self.fixed_it.count()

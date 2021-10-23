@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.http import HttpResponseRedirect
+
 from .models import Product, Category
 from .forms import ProductForm
 
@@ -64,12 +66,20 @@ def product_detail(request, product_id):
     """ A view to individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    fixed_its = product.total_fixes()
 
     context = {
         'product': product,
+        'fixed_its': fixed_its,
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def fixed_it(request, pk):
+    product = get_object_or_404(Product, id=request.POST.get('product_id'))
+    product.fixed_it.add(request.user)
+    return HttpResponseRedirect(reverse('product_detail', args=[str(pk)]))
 
 
 @login_required
