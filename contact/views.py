@@ -53,3 +53,16 @@ def contact_message(request, contact_id):
         template = 'contact/contact_message.html'
 
         return render(request, template, context)
+
+
+@login_required
+def delete_contact(request, contact_id):
+    """ Delete a contact from the contact admin """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    contact = get_object_or_404(Contact, pk=contact_id)
+    contact.delete()
+    messages.success(request, 'Message deleted!')
+    return redirect(reverse('contact_admin'))
