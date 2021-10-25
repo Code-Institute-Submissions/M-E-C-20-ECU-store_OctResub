@@ -442,3 +442,63 @@ When a user hovers (desktop) or pressed (mobile) buttons, the colour is changed 
 1. Add possibility for authorised users to create a wishlist.
 2. Add a newsletter signup.
 3. Add a product testimones page.
+
+---
+
+# Technologies Used
+
+## Development
+
+-   The project was written and tested in
+    [gitpod](https://www.gitpod.io/).
+-   The project was debugged using Google
+    Chrome [Dev
+    Tools](https://developer.chrome.com/docs/devtools/).
+-   The project uses [GitHub](https://github.com/) for hosting source code and utilising git version control.
+
+## Design
+
+-   The project's wireframes were designed in
+    [Balsamiq](https://balsamiq.com/wireframes/).
+
+## HTML/CSS
+
+HTML5 and CSS3 are used throughout this project.
+
+-   The project uses [Bootstrap](https://getbootstrap.com/) 5 as the HTML/CSS Framework..
+-   The project uses [FontAwesome](https://fontawesome.com/) v5.15.4, for the site icons.
+-   The project uses [Google Fonts](https://fonts.google.com/) for typography.
+
+## Python
+
+This project uses Python version 3.9.6 for back-end infrastructure and data
+pre-processing.
+
+A list of the packages dependencies can be found at [requirements.txt](requirements.txt).
+
+## JavaScript
+
+This project uses JavaScript ES6.
+
+-   The project uses [jQuery](https://jquery.com/), a JavaScript library, for
+    DOM Traversal, HTML Manipulation, and Event Handling.
+-   The project uses the [Stripe.js](https://stripe.com/docs/js) library for
+    handling Stripe payment objects.
+
+## Hosting
+-   This project is hosted through [Heroku](https://www.heroku.com/).
+-   This project’s images are hosted via [AWS S3](https://aws.amazon.com/s3/).
+
+## Database
+
+The project uses [PosteSQL](https://www.postgresql.org/), a relational Database,
+for data storage, and this is managed via
+[Heroku](https://www.heroku.com/postgres).
+
+## Testing Technologies
+
+-   The project's HTML was validated using [W3C HTML Markup Validator](https://validator.w3.org/).
+-   The project's CSS was validated using [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
+-   The project's JS was validated using [JSHint](https://jshint.com/).
+-   The project’s Python was validated using [Pylint](https://pylint.org/).
+-   The project's accessibility was assessed via Google Chrome's [Lighthouse](https://developers.google.com/web/tools/lighthouse).
