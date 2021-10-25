@@ -49,3 +49,30 @@ For checkout, Stripe is in test mode so real payments are not taken. For testing
 | Edit/update a product                                                          	| Logged in as admin on the website. Select a product. Selected edit button, changed a field on the product and submitted. Verified that the product details had been changed. 	| PASSED 	|
 | Delete a product                                                  	| Logged in as admin on the website. Select a product. Selected edit button, changed a field on the product and submitted. Verified that the product details had been changed.                                                                                                                                                                                                                                                                                                	| PASSED 	|
 | View site user messages                                                  	| Logged in as admin on the website. 1. Navigated to "Admin Tools" -> "Contact Admin". 2. Ensured that sent contact messages were present.                                                                                                                                                                                                                                                                                                	| PASSED 	|
+
+## Screenshots
+
+Screenshots were taken on multiple devices to ensure the website is responsive. For mibile and tablet devices, Google Chrome's vertual devices were used. The devices used are:
+
+- Desktop
+- iPad (768x1024)
+- Moto G4 (360x640)
+- Galaxy Fold (280x653)
+
+**Checkout**
+![Checkout](documentation/screenshots/checkout.jpg)
+
+**Contact**
+![Contact](documentation/screenshots/contact.jpg)
+
+**Order Confirmation**
+![Order Confirmation](documentation/screenshots/order_confirmation.jpg)
+
+**Product Management**
+![Product Management](documentation/screenshots/product_management.jpg)
+
+**Products**
+![Products](documentation/screenshots/products.jpg)
+
+**Profile**
+![Profile](documentation/screenshots/profile.jpg)
