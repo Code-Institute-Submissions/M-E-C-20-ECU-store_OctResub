@@ -662,3 +662,44 @@ following variables:
 -   Please note that using a local/development environment may use:
     -   `DEVELOPMENT: “Yes”`
 -   However, it’s important to note that in Development mode, Email/Key and USE_AWS are not required.
+
+---
+
+# Credits
+
+## Content
+
+-   The Boutique Ado project from Code Institute was used as a base for this project, and much of the code and style of the site is based on it. In particular the products, profile, login/registration and product maangement aspects.
+
+## Media
+
+-   ECU images were taken from shutterstock, courtesy of [Aleksandr Kondratov](https://www.shutterstock.com/g/AleksandrKondratov).
+- The background image is a scope image of a faulty diesel injector compared to a good one which I captured myself.
+
+## Code
+
+-   HTML/CSS/JS: Code for Back to Top button was original devised from Code
+    Institute’s Boutique Ado project.
+-   HTML/CSS/JS: The Bootstrap
+    [documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    was extensively utilised to implement various features of the framework.
+-   Python: Code extracts have been taken from Code Institute’s Boutique-Ado project for
+    creating many of the app, specifically the bag, checkout, products and profiles apps. Some customisation has been applied to make it suitable for this project.
+- Python: The fixed it button was created using this video as a guide: [Create Blog Like Button - Django Blog #18](https://www.youtube.com/watch?v=PXqRPqDjDgc&ab_channel=Codemy.com)
+-   Python: The Django [documentation](https://docs.djangoproject.com/en/3.2/)
+    was extensively utilised to learn and to implement various features of the framework.
+
+---
+
+# Acknowledgements
+
+-   The concept for this project was devised from my background in the automotive trade, and the Boutique Ado project from Code Institute
+-   Thank you to the slack community for their guidance.
+-   Thank you to my family for suppoting me in a hugely stressful time for us.
+
+---
+
+# Disclaimer
+
+This website is for educational purposes only; the project is not intended for
+profit and therefore the Stripe account will remain in Test mode.
