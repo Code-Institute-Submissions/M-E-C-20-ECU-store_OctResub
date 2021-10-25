@@ -75,3 +75,205 @@ The project was developed using **Python** (Django), **HTML**, **CSS**, **JavaSc
 | 24                                 | Store owner      | Edit/update a product                                                           | Change product prices, descriptions, images and other product criteria         |
 | 25                                 | Store owner          | Delete a product                                                            | Remove items that are no longer for sale                                                                              |
 | 26                                 | Store owner          | View site user messages                                                         | Resond to their queries                                                                           |
+
+## Scope
+
+### Functional Requirements
+
+#### Simple and Intuitive Interface
+
+-   Users must be able to navigate, and interact with, the site with ease.
+-   Ensure site is responsive to all device sizes.
+
+#### User Management
+
+-   Allow users to create an account, confirm their email address, change their
+    password, log in, and log out.
+
+#### Profile
+
+-   Allow users to visit their profile.
+-   Allow users to see their order history.
+-   Allow users to edit their profile details and edit it if desired.
+
+#### Products
+
+-   Allow users to easily view available products.
+-   Allow users to se what vehicles each product is available for.
+-   Allow users to view if the product has helped other users.
+
+#### Contact
+
+-   Allow users to reach out to the store owners for product related queries.
+-   Have a predefined structure to make it easier for the user to define their issue, and for the store owner to interpret.
+
+#### Admin Tools
+
+-   Allow the store owner to add new products to the database.
+-   Allow the store owner to edit or delete existing products from the database.
+-   Allow the store owner to view contact requests from site users, and to delete messages if necessary.
+
+## Structure
+
+### Informational Architecture
+
+In order to create a simple interface for the user, each of the project’s core
+functions will be isolated into different pages. In an attempt to implement an
+intuitive navigation system, a persistent Navbar (Navbar) will be utilised. This will allow a user to navigate the
+project with ease, spending minimal time finding attempting to make a purchase, which should help retain users.
+
+#### Navbar
+
+The Navbar will be present across the site and allow users to navigate across the site with ease.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   1, 4, 6, 7, 14, 17, 18, 23, 26
+>
+>Applicable Functional Requirements:
+>-   Simple, Intuitive, and Engaging Interface
+>-   View Products
+>-   View Profile
+>-   Contact
+>-   Register
+>-   Login/Logout
+>
+>Navigational Routes:
+>-   All logical pages.
+  
+</details>  
+  
+
+#### Home 
+
+The home page is the initial landing page, and provides a brief overview of the
+project’s concept and the appropriate CTAs.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   1, 6, 7
+>
+>Applicable Functional Requirements:
+>-   Direct users to view products.
+>-   Prompt to register
+>-   Prompt to login
+>
+>Navigational Routes:
+>-   Products
+>-   Log In (Logged Out)
+>-   Register (Logged Out)
+
+</details>  
+  
+
+#### Account Management
+
+Account Management will allow users to register, create an account, log in, log
+out,and reset their password.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   6, 7, 8, 9, 10
+>
+>Applicable Functional Requirements:
+>-   User Management
+>
+>Navigational Routes:
+>-   Account verification
+>-   Login Redirect
+
+</details>  
+  
+
+#### Contact 
+
+The will allow users to direct queries to the store manager.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   5, 26
+>
+>Applicable Functional Requirements:
+>-   Contact store owners.
+>-   Predetermined subjects help both the owner and the user to narrow down the query.
+>-   Contact admin will allow the store owner to view user messages.
+>
+>Navigational Routes:
+>-   N/A
+
+</details>  
+  
+
+#### Products
+
+The products page will allow all users to view all products available in the store. From there the user can filter on category, price, manufacturer or ECU. Users can select products to view further information on them and decide to add to bag if a site user, or edit/delete items if a store owner.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   1, 2, 3, 11, 12, 24, 25
+>
+>Applicable Functional Requirements:
+>-   Simple, Intuitive, and Engaging Interface
+>-   View products.
+>-   Sort products.
+>-   Add to bag.
+>-   Edit/delete products.
+>
+>Navigational Routes:
+>-   Bag
+>-   Edit/delete products (Admin)
+
+</details>  
+  
+
+#### Profile
+
+The profile will allow users to see their account details and order history. A user can update their account details to enable faster checkout.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   10, 19, 21
+>
+>Applicable Functional Requirements:
+>-   Simple, Intuitive, and Engaging Interface
+>-   User Management
+>-   View order history
+>
+>Navigational Routes:
+>-   N/A 
+
+</details>  
+  
+
+#### Admin Tools
+
+The admin tools page will allow the store owner to add products and to view messages from site users.
+
+<details>
+  <summary>Show Details</summary>
+
+>Applicable User Stories:
+>-   23, 26
+>
+>Applicable Functional Requirements:
+>-   Simple and Intuitive Interface
+>-   Add new products
+>-   View messages
+>
+>Navigational Routes:
+>-   N/A
+
+</details>  
+ 
