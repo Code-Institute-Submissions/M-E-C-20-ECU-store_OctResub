@@ -277,3 +277,60 @@ The admin tools page will allow the store owner to add products and to view mess
 
 </details>  
  
+ ### Design
+
+The following considerations were made when planning the project’s design.
+
+#### Navigation
+
+-   It should be simple and intuitive for a new user to land on the site and navigate it without confucion.
+-   All text sould be clear in purpose to a user and positioned to allow a user to understand the site navigation.
+
+#### Visual 
+
+-   Products should contain images to identify to the customer the accuracy of the product.
+-   Each image will be appropriately sized and positioned, allowing a user to
+    understand their relationship to the products, yet not overwhelm or misuse the available screen space.
+-   Text should be clear, appropriately sized and coloured.
+
+#### Physical
+
+-   All features will be available to all screen sizes and devices.
+-   Users will be able to access and engage with this project anywhere with an
+    internet connection.
+
+#### Time
+
+-   The site is designed to allow quick and easy purchasing of products.
+-   A user will be able to log out of website at any point, and log back in on any other device and resume where they left off.
+
+## Skeleton
+
+### Wireframes
+
+**Due to the resolution of the wireframe documents, it is recommended that these PDFs 
+are downloaded to be viewed in the browser, rather than using GitHub’s native PDF viewer.**
+
+-   All Wireframes: [Link]()
+-   Navbar Wireframe: [Link]()
+-   Home Wireframe: [Link]()
+-   Products Wireframe: [Link])
+-   Profile Wireframe: [Link]()
+-   Login/Register Wireframe: [Link]()
+-   Contact Wireframe: [Link]()
+-   Product Management Wireframe: [Link]()
+-   Contact Admin Wireframe: [Link]()
+
+### Database
+
+This project utilises a Relational Database via PostgreSQL for storing User
+Credentials, User Profiles, Products, Categories,  and Contacts. The Database went follwed a similar schema to the Boutique Ado project, as I thought it was a solid and logical place to build an e-commerce site from.
+
+**Schema**
+
+<details>
+  <summary>Final DB Schema</summary>
+
+![Final DB Schema]()
+
+</details>
