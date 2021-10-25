@@ -1,3 +1,4 @@
+<!-- credit: Boutique Ado project, Code Institute -->
 {% extends "base.html" %}
 {% load static %}
 
@@ -29,6 +30,7 @@
                     <div
                         class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
+                            <!-- sort box -->
                             <select id="sort-selector"
                                 class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort
@@ -74,9 +76,10 @@
                                 {% endif %}
                                 <hr class="w-50 mb-1 mx-auto">
                                 <div class="card-body pb-0">
-                                            <p class="mb-0">{{ product.year }} {{ product.manufacturer }} {{ product.model }}</p>
-                                            <p class="mb-0">{{ product.version }}</p>
-                                            <p class="lead mb-0 font-weight-bold">${{ product.price }}</p>
+                                    <p class="mb-0">{{ product.year }} {{ product.manufacturer }} {{ product.model }}
+                                    </p>
+                                    <p class="mb-0">{{ product.version }}</p>
+                                    <p class="lead mb-0 font-weight-bold">${{ product.price }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
@@ -88,8 +91,9 @@
                                                         <div class="col-6">
                                                             <button type="submit" name="product_id"
                                                                 value="{{ product.id }}"
-                                                                class="btn btn-black rounded-0 text-uppercase mt-2"><i
-                                                                    class="fas fa-car"></i> Fixed It!</button>
+                                                                class="btn btn-black rounded-0 text-uppercase mt-2">
+                                                                <i class="fas fa-car"></i> Fixed It!
+                                                            </button>
                                                         </div>
                                                         <div class="col-6">
                                                             <h6 class="pt-3"><i class="fas fa-toolbox"></i> Total fixes:
@@ -151,6 +155,7 @@
             </div>
         </div>
     </div>
+    <!-- return to top button -->
     <div class="btt-button shadow-sm rounded-0 border bg-light border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>

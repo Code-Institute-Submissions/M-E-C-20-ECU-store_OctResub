@@ -1,3 +1,4 @@
+<!-- credit: Boutique Ado project, Code Institute -->
 {% extends "base.html" %}
 {% load static %}
 
@@ -32,7 +33,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right">
+                    <div class="text-right mt-3">
                         <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Product</button>
                     </div>
@@ -46,7 +47,7 @@
     {{ block.super }}
     <script type="text/javascript">
         $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
+            let file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>

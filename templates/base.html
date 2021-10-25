@@ -1,3 +1,4 @@
+<!-- credit: Boutique Ado project, Code Institute -->
 {% load static %}
 
 <!doctype html>
@@ -177,9 +178,10 @@
     </footer>
 
     {% block postloadjs %}
+    <!-- call toast -->
       <script type="text/javascript">
-        var toastElList = [].slice.call(document.querySelectorAll('.toast'));
-        var toastList = toastElList.map(function (toastEl) {
+        let toastElList = [].slice.call(document.querySelectorAll('.toast'));
+        let toastList = toastElList.map(function (toastEl) {
           return new bootstrap.Toast(toastEl).show();
         });
       </script>
