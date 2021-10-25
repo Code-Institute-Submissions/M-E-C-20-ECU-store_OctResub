@@ -334,3 +334,111 @@ Credentials, User Profiles, Products, Categories,  and Contacts. The Database we
 ![Final DB Schema]()
 
 </details>
+
+## Surface
+
+This project utilises a
+simple colour scheme, designed for a visually soft style.
+
+### Colour Scheme
+
+The primary colour scheme, utilised for the layout, framework, and text of the
+website, focuses on a off-white to almost black colour scheme.
+
+![Primary Colour Scheme]()
+
+The variations of white were implemented in the navbar and backgrounds, and as text on buttons and the footer.
+
+The shades of black were used on buttons, to signal their purpose by contrasting with the white background.
+
+<details>
+  <summary>Contrast Results</summary>
+
+**Chalk on Raisin**  
+
+![Contrast – Chalk on Raisin](https://res.cloudinary.com/bak2k3/image/upload/v1628878126/CIRPG/Contrast_-_Chalk_on_Raisin_bejrgd.jpg)
+
+
+**Chalk on Rich**  
+
+![Contrast – Chalk on Rich](https://res.cloudinary.com/bak2k3/image/upload/v1628878126/CIRPG/Contrast_-_Chalk_on_Rich_bqfoal.jpg)
+
+</details>
+
+### Typography
+
+The font [Lato](https://fonts.google.com/specimen/Lato) was used across the whole project, as I think it suits the simple and minimalistic purpose o fthe site, and is easily readable.
+
+#### Underlined Links
+
+The navbar within the project produce an underlined effect when hovered (desktop) or pressed (mobile). This helps communicate that the elements
+are interactive, and produces appropriate user feedback when a user engages with
+these elements.
+
+![Visual Effects – Underline]()
+
+#### Button Effect 
+
+When a user hovers (desktop) or pressed (mobile) buttons, the colour is changed slightly to indicate this event.
+
+![Visual Effects – Buttons]()
+
+---
+
+# Features
+
+## Existing Features
+
+### General
+
+1. Navigation bar on top of each page that consists of:
+    * Site logo
+    * Search bar
+    * Main manvigation menu
+    * Menu entries to Login/Register for anonymous users
+    * My Account menu entry with a dropdown sub menu for authorized users
+    * Shopping bag menu entry with a total amount displayed
+2. Footer with social links and copyright message.
+2. Responsive layout that is adapted to desktop and mobile screen sizes.
+3. Supported by all of the most popular web browsers.
+4. Instant feedback from the site to the user with the help of pop-up messages when important actions take place.
+
+### Products
+
+1. View multiple products on single page.
+2. View each product on separate page.
+3. Search box where products can be found by name or description.
+4. Sort products by price, name and categories, both ascending and descending.
+5. Filter products by categories.
+6. Add product to the shopping bag with specified quantity.
+
+### Bag
+
+1. View shopping bag.
+2. Update quantity or Remove product(s) from the shopping bag.
+3. View checkout page.
+
+### Checkout
+1. Submit delivery information and payment details on checkout page.
+2. Complete an order and make a payment.
+3. View order details on payment completion.
+4. Receive an email with order details on payment completion.
+
+### Profile
+1. Update personal delivery information that will be used to prefill checkout form
+2. View order history
+3. Logout from the site
+
+### Contact
+1. Contact store owners.
+
+### Admin
+1. Execute all the feautures of users mentioned above.
+2. Add new product(s) to the site.
+3. Modify or delete existing products on the site.
+4. View contact forms submitted by users.
+
+### Future features
+1. Add possibility for authorised users to create a wishlist.
+2. Add a newsletter signup.
+3. Add a product testimones page.
