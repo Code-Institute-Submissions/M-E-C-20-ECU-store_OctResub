@@ -391,57 +391,57 @@ When a user hovers (desktop) or pressed (mobile) buttons, the colour is changed 
 
 ### General
 
-1. Navigation bar on top of each page that consists of:
-    * Site logo
-    * Search bar
-    * Main manvigation menu
-    * Menu entries to Login/Register for anonymous users
-    * My Account menu entry with a dropdown sub menu for authorized users
-    * Shopping bag menu entry with a total amount displayed
-2. Footer with social links and copyright message.
-2. Responsive layout that is adapted to desktop and mobile screen sizes.
-3. Supported by all of the most popular web browsers.
-4. Instant feedback from the site to the user with the help of pop-up messages when important actions take place.
+- Navigation bar on top of each page that consists of:
+    - Site logo
+    - Search bar
+    - Main manvigation menu
+    - Menu entries to Login/Register for anonymous users
+    - My Account menu entry with a dropdown sub menu for authorized users
+    - Shopping bag menu entry with a total amount displayed
+- Footer with social links and copyright message.
+- Responsive layout that is adapted to desktop and mobile screen sizes.
+- Supported by all of the most popular web browsers.
+- Instant feedback from the site to the user with the help of pop-up messages when important actions take place.
 
 ### Products
 
-1. View multiple products on single page.
-2. View each product on separate page.
-3. Search box where products can be found by name or description.
-4. Sort products by price, name and categories, both ascending and descending.
-5. Filter products by categories.
-6. Add product to the shopping bag with specified quantity.
+- View multiple products on single page.
+- View each product on separate page.
+- Search box where products can be found by name or description.
+- Sort products by price, name and categories, both ascending and descending.
+- Filter products by categories.
+- Add product to the shopping bag with specified quantity.
 
 ### Bag
 
-1. View shopping bag.
-2. Update quantity or Remove product(s) from the shopping bag.
-3. View checkout page.
+- View shopping bag.
+- Update quantity or Remove product(s) from the shopping bag.
+- View checkout page.
 
 ### Checkout
-1. Submit delivery information and payment details on checkout page.
-2. Complete an order and make a payment.
-3. View order details on payment completion.
-4. Receive an email with order details on payment completion.
+- Submit delivery information and payment details on checkout page.
+- Complete an order and make a payment.
+- View order details on payment completion.
+- Receive an email with order details on payment completion.
 
 ### Profile
-1. Update personal delivery information that will be used to prefill checkout form
-2. View order history
-3. Logout from the site
+- Update personal delivery information that will be used to prefill checkout form
+- View order history
+- Logout from the site
 
 ### Contact
-1. Contact store owners.
+- Contact store owners.
 
 ### Admin
-1. Execute all the feautures of users mentioned above.
-2. Add new product(s) to the site.
-3. Modify or delete existing products on the site.
-4. View contact forms submitted by users.
+- Execute all the feautures of users mentioned above.
+- Add new product(s) to the site.
+- Modify or delete existing products on the site.
+- View contact forms submitted by users.
 
 ### Future features
-1. Add possibility for authorised users to create a wishlist.
-2. Add a newsletter signup.
-3. Add a product testimones page.
+- Add possibility for authorised users to create a wishlist.
+- Add a newsletter signup.
+- Add a product testimones page.
 
 ---
 
@@ -502,3 +502,163 @@ for data storage, and this is managed via
 -   The project's JS was validated using [JSHint](https://jshint.com/).
 -   The project’s Python was validated using [Pylint](https://pylint.org/).
 -   The project's accessibility was assessed via Google Chrome's [Lighthouse](https://developers.google.com/web/tools/lighthouse).
+
+---
+
+# Testing
+
+Testing documentation, processes, and outcomes can be found under
+[TESTING.md](TESTING.md).
+
+---
+
+# Deployment
+
+## How this project was deployed
+
+This project was deployed to Heroku via the following steps:
+
+### Initial Deployment
+
+-   Navigate to [Heroku](https://www.heroku.com/).
+-   [Log in](https://id.heroku.com/login) or [Sign Up](https://signup.heroku.com/) for an account.
+    -   If Creating an account, select **Python** as the Primary development
+        language.
+    -   Activate the account via the confirmation email.
+    -   Accept the Terms of Service.
+-   Click on **Create new app**.
+-   Enter a suitable **App Name** and **Region**.
+-   Click **Create App**.
+-   Under the **Deploy** tab, under the heading **Deployment Method**, click the
+    **GitHub** icon, and proceed to click the button which states **Connect to
+    GitHub**.
+-   Enter your credentials for **GitHub.**
+-   Search for the repository required (in this instance, **ECU-Store**), and click
+    **Connect.**
+
+### Automatic Deployment
+
+This project was set up to automatically re-deploy with any changes made to the
+Master Branch. The following steps were taken to enable this.
+
+-   Navigate to the **Automatic deploys** section within the **Deploy** tab.
+-   Select the **branch** you would like to link to automatic deployment.
+    -   As stated above, the ‘master’ branch was chosen for automatic
+        deployment.
+-   Click **Enable Automatic Deploys**.
+
+### Database Setup Stage 1
+
+-   Within Heroku, navigate to **Resources.**
+-   Search for **Heroku Postrgres.**
+-   Ensure the plan name is **Hobby Dev – Free**.
+-   Click **Submit Order Form.**
+
+### Environment Variables
+
+The following environment variables must be set within your Heroku Server for
+the site to deploy and function correctly. Navigate to the **Settings** tab, and
+under the heading **Config Vars**, select **Reveal Config Vars,** and add the
+following variables:
+
+-   AWS_ACCESS_KEY_ID
+-   AWS_SECRET_ACCESS_KEY
+    -   These keys can be obtained by creating an [S3
+        Bucket](https://aws.amazon.com/s3/) on AWS.
+-   DATABASE_URL
+    -   This can be obtained by viewing your PostreSQL database within your [Heroku Dashboard](https://dashboard.heroku.com/), and accessing the URI under Settings Database Credentials.
+-   DJANGO_SECRET_KEY
+    -   A random sequence of characters, required for maintaining session security. One method of obtaining a Secret Key is through [RandomKeygen](https://randomkeygen.com/).
+-   DOMAIN_URL
+    -   The URL of the hosted project (i.e https://ecu-store.herokuapp.com/)
+-   EMAIL_HOST_PASS
+        - The app password for designated email account.
+-   EMAIL_HOST_USER
+    -   The email address and app password for designated email account.
+-   STRIPE_PRICE_ID
+-   STRIPE_PUBLISHABLE_KEY
+-   STRIPE_SECRET_KEY
+-   STRIPE_WH_SECRET
+    -   Create a [Stripe](https://stripe.com/en-gb) account.
+    -   Set up a one-off payment [Stripe
+        Product](https://stripe.com/docs/billing/prices-guide), and set the
+        resultant ID to the STRIPE_PRICE_ID.
+    -   In developer settings, under API Keys, obtain the Publishable and Secret
+        Key.
+    -   In developer settings, under Webhooks, add an endpoint as:
+        -   DOMAIN_URL+premium/webhook
+        -   Set the WH_SECRET as the Signing Secret generated as a result.
+-   USE_AWS
+    -   Set as True.
+
+### Database Setup Stage 2
+
+-   Once the PostreSQL add-on has been set up, environment variables have been
+    added and the project has been deployed, open the **Heroku Terminal** and
+    execute the following lines of code:
+
+> `heroku run python manage.py migrate`
+
+> `heroku run python manage.py loaddata categories`
+
+> `heroku run python manage.py loaddata products`
+
+-   This will migrate the databases and load the Products.
+
+## Running this project from locally
+
+### Running this project locally
+
+#### Cloning the Repository
+
+1.  Visit the project’s [GitHub Repository](https://github.com/M-E-C-20/ECU-store).
+2.  Click the "Code" dropdown box above the repository's file explorer.
+3.  Under the "Clone" heading, click the "HTTPS" sub-heading.
+4.  Click the clipboard icon, or manually copy the text presented:
+    `https://github.com/M-E-C-20/ECU-store.git`
+5.  Open your preferred IDE.
+6.  Ensure your IDE has support for Git, or has the relevant Git extension.
+7.  Open the terminal, and create a directory where you would like the
+    Repository to be stored.
+8.  Type git clone and paste the previously copied text
+    (`https://github.com/M-E-C-20/ECU-store.git`) and press enter.
+9.  The Repository will then be cloned to your selected directory.
+
+#### Manually Downloading the Repository
+
+1.  Visit the project’s [GitHub Repository](https://github.com/M-E-C-20/ECU-store).
+    -   Ensure you have selected the appropriate branch.
+2.  Click the "Code" dropdown box above the repository's file explorer.
+3.  Click the "Download ZIP" option; this will download a copy of the selected
+    branch's repository as a zip file.
+4.  Locate the ZIP file downloaded to your computer, and extract the ZIP to a
+    designated folder which you would like the repository to be stored.
+
+#### Opening the Repository
+
+1.  Open your preferred IDE.
+2.  Navigate to the chosen directory where the Repository was Cloned/Extracted.
+3.  **Optional:** Create a new Python [Virtual
+    Environment](https://docs.python.org/3/tutorial/venv.html)
+4.  Type `pip install requirements.txt` to install all the required packages.
+5.  Type ` python manage.py migrate` in the terminal to migrate the database.
+6.  Type `python manage.py loaddata categories` first in the terminal to set up the categories.
+7.  Type `python manage.py loaddata products` next in the terminal to set up the products.
+8.  You can now be hosting the repository from your IDE.
+
+### Environment Variables
+
+-   When running this project locally, the **Environment Variables** must be set in order for it to function as intended.
+-   If using gitpod, this can be done in your workspace settings:
+    - EMAIL_HOST_PASS - *variable*
+    - EMAIL_HOST_USER - *variable*
+    - SECRET_KEY - *variable*
+    - STRIPE_PUBLIC_KEY - *variable*
+    - STRIPE_SECRET_KEY - *variable*
+    - STRIPE_WH_SECRET - *variable*
+    - DEVELOPMENT - yes
+-   Within this file, declare the environment variables described previously,
+    replacing the *variable* with the required variables.
+-   Please note that using a local/development environment may use:
+    -   `DEVELOPMENT: “Yes”`
+-   However, it’s important to note that in Development mode, Email/Key and USE_AWS are not required.
