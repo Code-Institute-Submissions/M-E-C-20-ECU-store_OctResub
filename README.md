@@ -306,34 +306,10 @@ The following considerations were made when planning the project’s design.
 
 ## Skeleton
 
-### Wireframes
-
-**Due to the resolution of the wireframe documents, it is recommended that these PDFs 
-are downloaded to be viewed in the browser, rather than using GitHub’s native PDF viewer.**
-
--   All Wireframes: [Link]()
--   Navbar Wireframe: [Link]()
--   Home Wireframe: [Link]()
--   Products Wireframe: [Link])
--   Profile Wireframe: [Link]()
--   Login/Register Wireframe: [Link]()
--   Contact Wireframe: [Link]()
--   Product Management Wireframe: [Link]()
--   Contact Admin Wireframe: [Link]()
-
 ### Database
 
 This project utilises a Relational Database via PostgreSQL for storing User
 Credentials, User Profiles, Products, Categories,  and Contacts. The Database went follwed a similar schema to the Boutique Ado project, as I thought it was a solid and logical place to build an e-commerce site from.
-
-**Schema**
-
-<details>
-  <summary>Final DB Schema</summary>
-
-![Final DB Schema]()
-
-</details>
 
 ## Surface
 
@@ -345,25 +321,13 @@ simple colour scheme, designed for a visually soft style.
 The primary colour scheme, utilised for the layout, framework, and text of the
 website, focuses on a off-white to almost black colour scheme.
 
-![Primary Colour Scheme]()
+![Dark](documentation/screenshots/dark.jpg)
+
+![Light](documentation/screenshots/light.jpg)
 
 The variations of white were implemented in the navbar and backgrounds, and as text on buttons and the footer.
 
 The shades of black were used on buttons, to signal their purpose by contrasting with the white background.
-
-<details>
-  <summary>Contrast Results</summary>
-
-**Chalk on Raisin**  
-
-![Contrast – Chalk on Raisin](https://res.cloudinary.com/bak2k3/image/upload/v1628878126/CIRPG/Contrast_-_Chalk_on_Raisin_bejrgd.jpg)
-
-
-**Chalk on Rich**  
-
-![Contrast – Chalk on Rich](https://res.cloudinary.com/bak2k3/image/upload/v1628878126/CIRPG/Contrast_-_Chalk_on_Rich_bqfoal.jpg)
-
-</details>
 
 ### Typography
 
@@ -375,13 +339,9 @@ The navbar within the project produce an underlined effect when hovered (desktop
 are interactive, and produces appropriate user feedback when a user engages with
 these elements.
 
-![Visual Effects – Underline]()
-
 #### Button Effect 
 
 When a user hovers (desktop) or pressed (mobile) buttons, the colour is changed slightly to indicate this event.
-
-![Visual Effects – Buttons]()
 
 ---
 
